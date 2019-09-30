@@ -1,0 +1,23 @@
+************************************ Linear Tetranacci ************************************
+
+The Tetranacci(0) sequence value is 0. This method took 97600 nanoseconds.
+The Tetranacci(5) sequence value is 2. This method took 22300 nanoseconds.
+The Tetranacci(10) sequence value is 56. This method took 21100 nanoseconds.
+The Tetranacci(15) sequence value is 1490. This method took 32100 nanoseconds.
+The Tetranacci(20) sequence value is 39648. This method took 29000 nanoseconds.
+The Tetranacci(25) sequence value is 1055026. This method took 36100 nanoseconds.
+The Tetranacci(30) sequence value is 28074040. This method took 45700 nanoseconds.
+The Tetranacci(35) sequence value is 747044834. This method took 44100 nanoseconds.
+The Tetranacci(40) sequence value is 19878720128. This method took 73300 nanoseconds.
+The Tetranacci(45) sequence value is 528968939938. This method took 70800 nanoseconds.
+The Tetranacci(50) sequence value is 14075762303480. This method took 61500 nanoseconds.
+The Tetranacci(55) sequence value is 374553342295090. This method took 58000 nanoseconds.
+The Tetranacci(60) sequence value is 9966792788887776. This method took 78300 nanoseconds.
+The Tetranacci(65) sequence value is 265214449530564434. This method took 74400 nanoseconds.
+The Tetranacci(70) sequence value is 7057305768232953720. This method took 85000 nanoseconds.
+The Tetranacci(75) sequence value is 3326115739525933250. This method took 89500 nanoseconds.
+The Tetranacci(80) sequence value is -1917029801431269376. This method took 90500 nanoseconds.
+The Tetranacci(85) sequence value is 9090637906711111746. This method took 39000 nanoseconds.
+The Tetranacci(90) sequence value is -7109564001247022408. This method took 28000 nanoseconds.
+The Tetranacci(95) sequence value is 7765711627022177170. This method took 11900 nanoseconds.
+The Tetranacci(100) sequence value is -6791676668216763936. This method took 15400 nanoseconds.

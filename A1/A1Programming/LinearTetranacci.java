@@ -1,10 +1,12 @@
-import javax.sound.sampled.Line;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class LinearTetranacci {
-    private static int[] LinearTet(int k) {
-        int[] A = new int[4];
-        int i, j=0, l=0, m=0;
+    private static long[] LinearTet(int k) {
+        long[] A = new long[4];
+        long i, j = 0, l = 0, m = 0;
 
         if (k == 0 || k == 1 || k == 2) {
             i = 0;
@@ -37,22 +39,35 @@ public class LinearTetranacci {
             A[1] = i;
             A[2] = j;
             A[3] = l;
-            return (A);        // this will return (i+j, j)
+            return (A);        // this will return (i+j+l+m, j)
         }
     }
 
-    private static int getLinearTetranacci(int number){
+    private static long getLinearTetranacci(int number) {
         return LinearTet(number)[0];
     }
 
     public static void main(String[] args) {
-        int n;
-        Scanner kb = new Scanner(System.in);
+//        int n;
+//        Scanner kb = new Scanner(System.in);
+//
+//        System.out.print("Please enter the a non-negative value to find its Tetranacci sequence: ");
+//        n = kb.nextInt();
 
-        System.out.print("Please enter the a non-negative value to find its Tetranacci sequence: ");
-        n = kb.nextInt();
-
-        System.out.println("\nThe Tetranacci(" + n + ") sequence value is "+getLinearTetranacci(n)+ ".");
-        kb.close();
+        try {
+            PrintWriter writer = new PrintWriter(new FileOutputStream("out.txt"));
+            writer.println("************************************ Linear Tetranacci ************************************\n");
+            for (int i = 0; i <= 100; i = i + 5) {
+                long startTime = System.nanoTime();
+                writer.print("The Tetranacci(" + i + ") sequence value is " + getLinearTetranacci(i) + ".");
+                long endTime = System.nanoTime();
+                long duration = (endTime - startTime);
+                writer.println(" This method took " + duration + " nanoseconds.");
+            }
+            writer.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found exception.");
+        }
+//        kb.close();
     }
 }

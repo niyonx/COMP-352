@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class BinaryFib {
-    public static int binaryFib(int k) {
+    private static int binFib(int k) {
         int fibVal;
 
         if (k == 0 || k == 1) {
             fibVal = k;
         } else {
-            fibVal = binaryFib(k - 1) + binaryFib(k - 2);
+            fibVal = binFib(k - 1) + binFib(k - 2);
         }
         return fibVal;
     }
@@ -19,8 +19,8 @@ public class BinaryFib {
         System.out.print("Please enter the a non-negative value to find its Fibonacci sequence: ");
         n = kb.nextInt();
 
-        int fibVal = binaryFib(n);
-        System.out.println("\n The Fibonacci value for n=" + n + " is:" + fibVal + ".");
+        int fibVal = binFib(n);
+        System.out.println("\nThe Fibonacci value for n=" + n + " is " + fibVal + ".");
         kb.close();
     }
 }
